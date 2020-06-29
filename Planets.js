@@ -48,7 +48,7 @@ class Planet extends React.Component{
         {
         this.state.vehiclesData.map(obj=>{
           return <div><input type="radio" name="vehicle-1" value={obj.name} />
-          <label>{obj.name}</label></div>
+          <label>{obj.name}({obj.total_no})</label></div>
         })
         }
       </form>
