@@ -38,6 +38,7 @@ class Planet extends React.Component{
   render(){
     return (
       <form action="submit">
+      <div className="row">
         <label>Destination1 : </label><br/>
         <select id = "destination-1" name="destination-1" onChange={this.handleChange}>
         <option value="" disabled selected>Select</option>
@@ -45,6 +46,7 @@ class Planet extends React.Component{
           return <option value={obj.name}>{obj.name}</option>
         })}
         </select>
+      </div>
         {
         this.state.vehiclesData.map(obj=>{
           return <div><input type="radio" name="vehicle-1" value={obj.name} />
